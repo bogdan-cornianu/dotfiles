@@ -4,8 +4,6 @@
     '(show-paren-mode t)
     '(tool-bar-mode nil)
     '(show-trailing-whitespace t)
-    '(ido-mode t)
-    '(menu-bar-mode nil)
     '(scroll-bar-mode nil)
     '(inhibit-startup-screen t)
     '(large-file-warning-threshold nil)
@@ -29,9 +27,6 @@
 (package-initialize)
 (package-refresh-contents)
 
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.sls?\\'" . yaml-mode))
 
@@ -47,12 +42,17 @@
 (global-auto-complete-mode t)
 
 (require 'uniquify)
-(require 'ido)
-(ido-mode t)
-
 (require 'fill-column-indicator)
+
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-create-new-buffer 'always)
+(ido-mode 1)
+
 (define-globalized-minor-mode
  global-fci-mode fci-mode (lambda () (fci-mode 1)))
 (global-fci-mode t)
 
+(display-time)
 
+(setq default-directory "full_path_to_dir")
