@@ -13,6 +13,8 @@
     '(custom-enabled-themes (quote (wombat)))
 )
 
+(set-frame-font "Source Code Pro-13" nil t)
+
 (require 'package)
 (add-to-list 'package-archives
 	     '("gnu" . "http://elpa.gnu.org/packages/"))
