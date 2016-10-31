@@ -1,19 +1,28 @@
 (custom-set-variables
-    '(ansi-color-names-vector ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
-    '(column-number-mode t)
-    '(show-paren-mode t)
-    '(tool-bar-mode nil)
-    '(show-trailing-whitespace t)
-    '(scroll-bar-mode nil)
-    '(inhibit-startup-screen t)
-    '(large-file-warning-threshold nil)
-    '(python-shell-interpreter "python")
-    '(display-time-day-and-date t)
-    '(display-time-24hr-format t)
-    '(custom-enabled-themes (quote (wombat)))
-)
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+ '(column-number-mode t)
+ '(custom-safe-themes
+   (quote
+    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+ '(display-time-24hr-format t)
+ '(display-time-day-and-date t)
+ '(inhibit-startup-screen t)
+ '(large-file-warning-threshold nil)
+ '(python-shell-interpreter "python")
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t)
+ '(show-trailing-whitespace t)
+ '(tool-bar-mode nil))
 
 (set-frame-font "Source Code Pro-13" nil t)
+(global-linum-mode 1)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -29,7 +38,9 @@
 (package-initialize)
 (package-refresh-contents)
 
-(setq package-list '(auto-complete yaml-mode flycheck less-css-mode markdown-mode jedi smartparens magit virtualenvwrapper))
+(setq package-list '(auto-complete yaml-mode flycheck less-css-mode markdown-mode epc jedi smartparens magit virtualenvwrapper))
+
+;;(load-theme 'solarized-light)
 
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.sls?\\'" . yaml-mode))
@@ -68,6 +79,8 @@
 )
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
+(require 'epc)
+(require 'jedi)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (add-hook 'python-mode-hook
           (lambda ()
@@ -119,4 +132,10 @@ Don't mess with special buffers."
       (kill-buffer buffer))))
 
 (setq locate-command "mdfind")
-(setq default-directory "full path to dir")
+(setq default-directory "")
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
