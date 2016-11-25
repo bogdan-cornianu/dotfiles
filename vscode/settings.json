@@ -1,0 +1,20 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pep8Args": [
+        "--max-line-length=119"
+    ],
+    "editor.rulers": [
+        119
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/*.pyc": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true
+    }
+}
+
