@@ -3,7 +3,7 @@
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "python.linting.pep8Enabled": true,
-    "files.autoSave": "onWindowChange",
+    "files.autoSave": "onFocusChange",
     "editor.renderWhitespace": "boundary",
     "python.linting.pep8Args": [
         "--max-line-length=119"
