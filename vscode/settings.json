@@ -4,7 +4,10 @@
     "telemetry.enableCrashReporter": false,
     "python.linting.pep8Enabled": true,
     "files.autoSave": "onFocusChange",
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "all",    
+    "editor.minimap.enabled": true,
+    "editor.renderControlCharacters": true,
+    "editor.fontFamily": "Hack, Monaco, 'Courier New', monospace",
     "python.linting.pep8Args": [
         "--max-line-length=119"
     ],
@@ -17,6 +20,8 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true
-    }
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": true
 }
-
