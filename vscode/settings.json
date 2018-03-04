@@ -1,4 +1,4 @@
-// Place your settings in this file to overwrite the default settings
+//Place your settings in this file to overwrite the default settings
 {
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -25,3 +25,4 @@
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true
 }
+
