@@ -23,7 +23,12 @@
     },
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "Default Light+",
+    "docker-explorer.showAzureRegistries": false,
+    "docker-explorer.enableTelemetry": false,
+    "docker-explorer.showSuggestedDockerImages": false,
+    "docker-explorer.showDockerHubTreeView": false,
 }
 
 
