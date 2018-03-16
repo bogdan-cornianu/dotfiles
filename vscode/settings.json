@@ -29,6 +29,7 @@
     "docker-explorer.enableTelemetry": false,
     "docker-explorer.showSuggestedDockerImages": false,
     "docker-explorer.showDockerHubTreeView": false,
+    "gitlens.currentLine.enabled": false,
 }
 
 
