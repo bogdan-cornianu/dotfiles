@@ -43,10 +43,10 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -173,4 +173,7 @@ exec --no-startup-id hsetroot -solid "#373B41"
 
 # Start Compton
 exec --no-startup-id compton --config ~/.config/compton.conf -b
+
+# i3 lock fancy
+bindsym $mod+l exec i3lock-fancy
 
