@@ -172,7 +172,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 exec --no-startup-id hsetroot -solid "#373B41"
 
 # Start Compton
-exec --no-startup-id compton --config ~/.config/compton.conf -b
+exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton/compton.conf -b
 
 # i3 lock fancy
 bindsym $mod+l exec i3lock-fancy
